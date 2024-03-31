@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Age Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="Calculator">
+    <div class="date">
+        <div class="item">
+            <label for="day">
+                DAY
+            </label>
+            <input type="number" id="day" placeholder="DD" min="1" max="31">
+        </div>
+        <div class="item">
+            <label for="month">
+                MONTH
+            </label>
+            <input type="text" id="month" placeholder="MM" maxlength="2">
+        </div>
+        <div class="item">
+            <label for="year">
+                YEAR
+            </label>
+            <input type="text" id="year" placeholder="YYYY" maxlength="4">
+        </div>
+    </div>
+    <div class="min">
+        <hr>
+        <button onclick="Calculate()"></button>
+    </div>
+    <div class="output">
+        <div class="years">
+            <span id="yearout">--</span>
+            <p>years</p>
+        </div>
+        <div class="months">
+            <span id="monthout">--</span>
+            <p>months</p>
+        </div>
+        <div class="days">
+            <span id="dayout">--</span>
+            <p>days</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
